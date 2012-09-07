@@ -35,10 +35,7 @@ THE SOFTWARE.
 */
 
 #include "MPU6050.h"
-#include "ch.h"
-#include "hal.h"
-#include "test.h"
-#include "chprintf.h"
+
 /** Default constructor, uses default I2C address.
  * @see MPU6050_DEFAULT_ADDRESS
  */
@@ -65,9 +62,7 @@ MPU6050::MPU6050(uint8_t address) {
  */
 void MPU6050::initialize() {
     setClockSource(MPU6050_CLOCK_PLL_XGYRO);
-	 chprintf((BaseChannel *)&SD2, "Clock");
     setFullScaleGyroRange(MPU6050_GYRO_FS_250);
-	 chprintf((BaseChannel *)&SD2, "Gyro");
     setFullScaleAccelRange(MPU6050_ACCEL_FS_2);
     setSleepEnabled(false); // thanks to Jack Elston for pointing this one out!
 }

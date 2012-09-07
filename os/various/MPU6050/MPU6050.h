@@ -779,7 +779,7 @@ class MPU6050 {
         // special methods for MotionApps 2.0 implementation
         #ifdef MPU6050_INCLUDE_DMP_MOTIONAPPS20
             uint8_t *dmpPacketBuffer;
-            const uint16_t dmpPacketSize = 42;
+            uint16_t dmpPacketSize;
 
             uint8_t dmpInitialize();
             bool dmpPacketAvailable();
@@ -880,7 +880,7 @@ class MPU6050 {
         // special methods for MotionApps 4.1 implementation
         #ifdef MPU6050_INCLUDE_DMP_MOTIONAPPS41
             uint8_t *dmpPacketBuffer;
-            const uint16_t dmpPacketSize = 48;
+            uint16_t dmpPacketSize;
 
             uint8_t dmpInitialize();
             bool dmpPacketAvailable();

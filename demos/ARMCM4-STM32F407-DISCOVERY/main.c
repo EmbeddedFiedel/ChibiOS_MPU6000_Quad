@@ -25,13 +25,14 @@
     for full details of how and when the exception can be applied.
 */
 
+
 #include "ch.h"
 #include "hal.h"
 #include "test.h"
 #include "lis302dl.h"
 #include "MPU6000_Define.h"
 #include "chprintf.h"
-#include "MPU6050_DMP6.cpp"
+//#include "MPU6050_9Axis_MotionApps41.cpp"
 
 static void pwmpcb(PWMDriver *pwmp);
 static void adccb(ADCDriver *adcp, adcsample_t *buffer, size_t n);
@@ -353,21 +354,13 @@ void i2c_scanner1(void){
 
       txbuf[0] = 0x00;
       txbuf[1] = 0x00;
-	  i2cAcquireBus(&I2CD1);
+
        messages = i2cMasterTransmit(&I2CD1, x, txbuf, 2, rxbuf, 0);
-	    i2cReleaseBus(&I2CD1);
        if(messages == 0)chprintf((BaseChannel *)&SD2, "I2C1: Sensor is available on Address: %x \r\n", x, messages);
-	  	
+	
       chThdSleepMilliseconds(1);
       }
-	  	txbuf[0] = 0x75;
-
-	    i2cAcquireBus(&I2CD1);
-	   	messages = i2cMasterTransmit(&I2CD1, 0x68, txbuf, 1, rxbuf, 2);
-	   	i2cReleaseBus(&I2CD1);
-
-       if(messages == 0)chprintf((BaseChannel *)&SD2, "Sensor Who am I: %x \r\n", rxbuf[0]); 
-	 	chThdSleepMilliseconds(500);
+	 chThdSleepMilliseconds(500);
 }
 
 void readAcc(void)
@@ -467,22 +460,22 @@ int main(void) {
    * driver 2.
    */
 
-  // Setup_MPU6050();
-  setup_IMU();
+   Setup_MPU6050();
+
   while (TRUE) {
 
 
 
     int8_t x, y, z;
-   i2c_scanner1();
-  //readAcc();
+  // i2c_scanner1();
+  readAcc();
     if (palReadPad(GPIOA, GPIOA_BUTTON))
       TestThread(&SD2);
 
-   // x = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTX);
-   // y = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTY);
-   // z = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTZ);
-   // chprintf((BaseChannel *)&SD2, "Acc onBoard: %d, %d, %d\r\n", x, y, z);
+    x = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTX);
+    y = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTY);
+    z = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTZ);
+    chprintf((BaseChannel *)&SD2, "Acc onBoard: %d, %d, %d\r\n", x, y, z);
     chThdSleepMilliseconds(100);
   }
 }
