@@ -65,9 +65,9 @@ MPU6050::MPU6050(uint8_t address) {
  */
 void MPU6050::initialize() {
     setClockSource(MPU6050_CLOCK_PLL_XGYRO);
-	 chprintf((BaseChannel *)&SD2, "Clock");
+	// chprintf((BaseChannel *)&SD2, "Clock");
     setFullScaleGyroRange(MPU6050_GYRO_FS_250);
-	 chprintf((BaseChannel *)&SD2, "Gyro");
+	// chprintf((BaseChannel *)&SD2, "Gyro");
     setFullScaleAccelRange(MPU6050_ACCEL_FS_2);
     setSleepEnabled(false); // thanks to Jack Elston for pointing this one out!
 }

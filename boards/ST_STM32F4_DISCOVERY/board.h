@@ -209,9 +209,9 @@
                              PIN_PUDR_PULLUP(4) |                           \
                              PIN_PUDR_PULLUP(5) |                           \
                              PIN_PUDR_FLOATING(GPIOB_SCL) |                 \
-                             PIN_PUDR_FLOATING(GPIOB_SDA) |                           \
+                             PIN_PUDR_PULLUP(7) |                           \
                              PIN_PUDR_PULLUP(8) |                           \
-                             PIN_PUDR_PULLUP(9) |                 \
+                             PIN_PUDR_FLOATING(GPIOB_SDA) |                 \
                              PIN_PUDR_PULLUP(10) |                          \
                              PIN_PUDR_PULLUP(11) |                          \
                              PIN_PUDR_PULLUP(12) |                          \

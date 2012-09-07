@@ -139,24 +139,24 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>72</LineNumber>
+          <LineNumber>485</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134218512</Address>
+          <Address>134261588</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\STM32F4\ChibiOS_2.4.2\ChibiOS_MPU6000_Quad\os\various\MPU6050\MPU6050.cpp</Filename>
+          <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\ch\../../../os/various/MPU6050/MPU6050_9Axis_MotionApps41.h\485</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>234</LineNumber>
+          <LineNumber>486</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134225136</Address>
+          <Address>134261598</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
@@ -164,127 +164,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/I2Cdev/I2Cdev.cpp\234</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>2482</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218424</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/MPU6050.cpp\2482</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>2389</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218374</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/MPU6050.cpp\2389</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>144</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134256908</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/Examples/MPU6050_DMP6/MPU6050_DMP6.cpp\144</Expression>
-        </Bp>
-        <Bp>
-          <Number>5</Number>
-          <Type>0</Type>
-          <LineNumber>67</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218444</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/MPU6050.cpp\67</Expression>
-        </Bp>
-        <Bp>
-          <Number>6</Number>
-          <Type>0</Type>
-          <LineNumber>158</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134256914</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/Examples/MPU6050_DMP6/MPU6050_DMP6.cpp\158</Expression>
-        </Bp>
-        <Bp>
-          <Number>7</Number>
-          <Type>0</Type>
-          <LineNumber>71</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218492</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/MPU6050.cpp\71</Expression>
-        </Bp>
-        <Bp>
-          <Number>8</Number>
-          <Type>0</Type>
-          <LineNumber>161</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134256922</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/Examples/MPU6050_DMP6/MPU6050_DMP6.cpp\161</Expression>
-        </Bp>
-        <Bp>
-          <Number>9</Number>
-          <Type>0</Type>
-          <LineNumber>158</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134256914</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ch\../../../os/various/MPU6050/Examples/MPU6050_DMP6/MPU6050_DMP6.cpp\158</Expression>
+          <Expression>\\ch\../../../os/various/MPU6050/MPU6050_9Axis_MotionApps41.h\486</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -294,6 +174,13 @@
           <ItemText>I2CD1</ItemText>
         </Ww>
       </WatchWindow1>
+      <MemoryWindow1>
+        <Mm>
+          <WinNumber>1</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>0x200011C0</ItemText>
+        </Mm>
+      </MemoryWindow1>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
@@ -336,10 +223,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>50</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>28</TopLine>
+      <CurrentLine>33</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\boards\ST_STM32F4_DISCOVERY\board.c</PathWithFileName>
       <FilenameWithoutPath>board.c</FilenameWithoutPath>
@@ -380,8 +267,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>58</TopLine>
+      <CurrentLine>67</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\various\MPU6050\MPU6050.cpp</PathWithFileName>
       <FilenameWithoutPath>MPU6050.cpp</FilenameWithoutPath>
@@ -394,8 +281,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>107</TopLine>
+      <CurrentLine>116</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\various\I2Cdev\I2Cdev.cpp</PathWithFileName>
       <FilenameWithoutPath>I2Cdev.cpp</FilenameWithoutPath>
@@ -415,8 +302,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>66</TopLine>
+      <CurrentLine>78</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\ports\RVCT\ARMCMx\cstartup.s</PathWithFileName>
       <FilenameWithoutPath>cstartup.s</FilenameWithoutPath>
@@ -527,8 +414,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>333</TopLine>
+      <CurrentLine>342</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\ports\RVCT\ARMCMx\STM32F4xx\vectors.s</PathWithFileName>
       <FilenameWithoutPath>vectors.s</FilenameWithoutPath>
@@ -1582,10 +1469,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>32</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>233</TopLine>
+      <CurrentLine>233</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\platforms\STM32\i2c_lld.c</PathWithFileName>
       <FilenameWithoutPath>i2c_lld.c</FilenameWithoutPath>
@@ -1944,12 +1831,12 @@
       <GroupNumber>7</GroupNumber>
       <FileNumber>113</FileNumber>
       <FileType>8</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>11</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>465</TopLine>
+      <CurrentLine>481</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -2032,5 +1919,96 @@
       <FilenameWithoutPath>chprintf.c</FilenameWithoutPath>
     </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>D:\STM32F4\ChibiOS_2.4.2\ChibiOS_MPU6000_Quad\os\various\MPU6050\Examples\MPU6050_DMP6\MPU6050_DMP6.cpp</PathWithFilename>
+    <TopLine>135</TopLine>
+    <CurrentLine>144</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <MDIGroups>
+    <Orientation>1</Orientation>
+    <ActiveMDIGroup>0</ActiveMDIGroup>
+    <MDIGroup>
+      <Size>100</Size>
+      <ActiveTab>0</ActiveTab>
+      <Documents>
+        <Doc>
+          <Name>..\..\..\os\ports\RVCT\ARMCMx\cstartup.s</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>66</TopLine>
+          <CurrentLine>78</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\ports\RVCT\ARMCMx\STM32F4xx\vectors.s</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>333</TopLine>
+          <CurrentLine>342</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\various\MPU6050\MPU6050.cpp</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>58</TopLine>
+          <CurrentLine>67</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\main.c</Name>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>465</TopLine>
+          <CurrentLine>481</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\various\MPU6050\Examples\MPU6050_DMP6\MPU6050_DMP6.cpp</Name>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>135</TopLine>
+          <CurrentLine>144</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\various\I2Cdev\I2Cdev.cpp</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>107</TopLine>
+          <CurrentLine>116</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\platforms\STM32\i2c_lld.c</Name>
+          <ColumnNumber>32</ColumnNumber>
+          <TopLine>233</TopLine>
+          <CurrentLine>233</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\boards\ST_STM32F4_DISCOVERY\board.h</Name>
+          <ColumnNumber>23</ColumnNumber>
+          <TopLine>187</TopLine>
+          <CurrentLine>205</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\boards\ST_STM32F4_DISCOVERY\board.c</Name>
+          <ColumnNumber>50</ColumnNumber>
+          <TopLine>28</TopLine>
+          <CurrentLine>33</CurrentLine>
+        </Doc>
+      </Documents>
+    </MDIGroup>
+  </MDIGroups>
 
 </ProjectOpt>
