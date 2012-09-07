@@ -353,13 +353,18 @@ void i2c_scanner1(void){
 
       txbuf[0] = 0x00;
       txbuf[1] = 0x00;
+	  i2cAcquireBus(&I2CD1);
        messages = i2cMasterTransmit(&I2CD1, x, txbuf, 2, rxbuf, 0);
+	    i2cReleaseBus(&I2CD1);
        if(messages == 0)chprintf((BaseChannel *)&SD2, "I2C1: Sensor is available on Address: %x \r\n", x, messages);
 	  	
       chThdSleepMilliseconds(1);
       }
 	  	txbuf[0] = 0x75;
+
+	    i2cAcquireBus(&I2CD1);
 	   	messages = i2cMasterTransmit(&I2CD1, 0x68, txbuf, 1, rxbuf, 2);
+	   	i2cReleaseBus(&I2CD1);
 
        if(messages == 0)chprintf((BaseChannel *)&SD2, "Sensor Who am I: %x \r\n", rxbuf[0]); 
 	 	chThdSleepMilliseconds(500);
@@ -378,9 +383,8 @@ void readAcc(void)
 /*
  * Application entry point.
  */
-
 int main(void) {
- uint8_t txbuf_glo[1], rxbuf_glo[2];
+
   /*
    * System initializations.
    * - HAL initialization, this also initializes the configured device drivers
@@ -451,10 +455,10 @@ int main(void) {
    * are initialized in the board file.
    * Several LIS302DL registers are then initialized.
    */
-//  spiStart(&SPID1, &spi1cfg);
- // lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG1, 0x43);
- // lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG2, 0x00);
- // lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG3, 0x00);
+  spiStart(&SPID1, &spi1cfg);
+  lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG1, 0x43);
+  lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG2, 0x00);
+  lis302dlWriteRegister(&SPID1, LIS302DL_CTRL_REG3, 0x00);
 
   /*
    * Normal main() thread activity, in this demo it does nothing except
@@ -464,21 +468,14 @@ int main(void) {
    */
 
   // Setup_MPU6050();
- // setup_IMU();
-
-	txbuf_glo[0]= 0x6B;
-   // i2cAcquireBus(&I2CD1);
-//	i2cMasterTransmit(&I2CD1, 0x68 , txbuf_glo, 1, rxbuf_glo, 2);
-//	i2cReleaseBus(&I2CD1);
-//	data[0] = rxbuf_global[0];
-
+  setup_IMU();
   while (TRUE) {
 
 
 
     int8_t x, y, z;
    i2c_scanner1();
-  //	readAcc();
+  //readAcc();
     if (palReadPad(GPIOA, GPIOA_BUTTON))
       TestThread(&SD2);
 
